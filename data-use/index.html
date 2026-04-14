@@ -19,13 +19,13 @@
         <div class="eyebrow">Data Use</div>
         <h1>What MogUp uses your data for.</h1>
         <p class="lede">This is the shorter, plain-language version of how MogUp uses the information you provide inside the app.</p>
-        <div class="meta">Last updated: April 10, 2026</div>
+        <div class="meta">Last updated: April 15, 2026</div>
 
         <h2>Your face data</h2>
-        <p>Your selected photo is analyzed on-device to detect facial landmarks and blendshape-style measurements. MogUp uses those inputs to generate scan results, score breakdowns, and the results card shown in the app.</p>
+        <p>Your selected photo is used to generate facial landmarks and blendshape-style measurements on-device, then the photo, those derived measurements, your onboarding answers, and, for rescans, limited previous scan context are sent to MogUp’s backend and OpenAI to generate the scan result and, when applicable, a refreshed plan.</p>
 
         <h2>Where it is stored</h2>
-        <p>MogUp is designed to keep raw photos and scan-related analysis on your device. MogUp does not send raw face photos or derived landmark and blendshape-style measurements to third parties.</p>
+        <p>MogUp keeps saved journeys and scan history locally on your device. MogUp’s backend treats scan requests as transient and does not intentionally keep a separate long-term remote history of uploaded scan photos after the response is returned. OpenAI processes the scan request as MogUp’s remote AI provider.</p>
 
         <h2>Your onboarding answers</h2>
         <p>Your answers help tailor the protocol, focus areas, and pacing of your personalized plan.</p>
@@ -37,13 +37,13 @@
         <p>Subscription status is used to determine whether premium features such as full analysis results and protocol access should be unlocked.</p>
 
         <h2>How long it is retained</h2>
-        <p>The raw photo and derived landmark and blendshape-style measurements are used during the active scan flow and are not kept as separate long-term records. Saved scan results and answers may remain locally on the device for history, including the latest journey and up to 12 saved scans, until the app is deleted or its local data is cleared.</p>
+        <p>The raw photo and derived landmark and blendshape-style measurements are used during the active scan flow and are not kept by MogUp as separate long-term remote records after the response is returned. Saved scan results and answers may remain locally on the device for history, including the latest journey and up to 12 saved scans, until the app is deleted or its local data is cleared. OpenAI may retain API request data for up to 30 days under its standard API abuse-monitoring controls unless a different enterprise retention configuration applies.</p>
 
         <h2>How to stop future face processing</h2>
         <p>You can stop MogUp from processing new face data at any time by not starting a new scan and by removing camera or photo-library access for MogUp in the iOS Settings app.</p>
 
         <h2>How to remove saved data</h2>
-        <p>You can remove saved scan history from inside the app using the Clear History control in Progress, or delete the app to remove the remaining locally stored MogUp data from the device. MogUp does not keep a remote copy of your raw face photo, landmark data, or saved scan history.</p>
+        <p>You can remove saved scan history from inside the app using the Clear History control in Progress, or delete the app to remove the remaining locally stored MogUp data from the device. MogUp does not keep a separate long-term remote history of your raw face photo or saved scan history after request processing is complete.</p>
 
         <div class="callout">
           GitHub Pages only serves these legal pages publicly. It does not store the in-app photo, scan, or progress data used by MogUp itself.
